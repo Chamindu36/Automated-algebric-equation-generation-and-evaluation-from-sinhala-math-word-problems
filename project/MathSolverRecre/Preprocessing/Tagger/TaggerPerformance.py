@@ -4,8 +4,9 @@ import math
 from sklearn import metrics
 
 from project.MathSolverRecre.Preprocessing.Tagger.PosPerceptronTagger import ngramTagger
+from project.MathSolverRecre.constants import MainPath
 
-corpus = TaggedCorpusReader("D:/ZZ__FYP/project/MathSolverRecre/Preprocessing/Resources/Tagger", r" .*\.txt", encoding="utf-16")
+corpus = TaggedCorpusReader(MainPath +"project/MathSolverRecre/Preprocessing/Resources/Tagger", r" .*\.txt", encoding="utf-16")
 
 training_corpus = list(corpus.tagged_sents('Test_Corpus.txt'))
 tagger = PerceptronTagger(load=True)

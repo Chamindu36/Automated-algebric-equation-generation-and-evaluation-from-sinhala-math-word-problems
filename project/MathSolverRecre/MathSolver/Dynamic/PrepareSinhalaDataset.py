@@ -8,6 +8,7 @@ import nltk
 from project.MathSolverRecre.Preprocessing.Tagger.TaggerUse import sentence_tag_in_array_style
 from project.MathSolverRecre.Preprocessing.Utils.PrepareData import prepare_data
 from project.MathSolverRecre.Preprocessing.Utils.Tokenizer import tokenize_texts
+from project.MathSolverRecre.constants import MainPath
 
 nltk.download('perluniprops')
 
@@ -108,7 +109,7 @@ def makemap(strs, wordslist):
 def load_ANN():
     corpus = []
     f = list(csv.reader(
-        open("D:/ZZ__FYP/project/MathSolverRecre/MathSolver/AlgebraResources/Test2.csv"
+        open(MainPath +"project/MathSolverRecre/MathSolver/AlgebraResources/Test2.csv"
              )))
     for i in f:
         if (i[1] == "Arithmetic" and (

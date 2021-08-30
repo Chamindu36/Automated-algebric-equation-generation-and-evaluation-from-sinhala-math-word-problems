@@ -1,5 +1,8 @@
 import pickle
 import nltk
+
+from project.MathSolverRecre.constants import MainPath
+
 nltk.download('averaged_perceptron_tagger')
 from nltk.corpus import TaggedCorpusReader
 
@@ -22,7 +25,7 @@ def ngramTagger(train_sents, n=3, defaultTag='NN'):
         return t3
 
 #Get Corpus from resources
-corpus_1 = TaggedCorpusReader("D:/ZZ__FYP/project/MathSolverRecre/Preprocessing/Resources/Tagger", r" .*\.txt", encoding="utf-16")
+corpus_1 = TaggedCorpusReader(MainPath +"project/MathSolverRecre/Preprocessing/Resources/Tagger", r" .*\.txt", encoding="utf-16")
 
 training_corpus = list(corpus_1.tagged_sents('Test_Corpus.txt'))
 tagger = nltk.PerceptronTagger(load=True)

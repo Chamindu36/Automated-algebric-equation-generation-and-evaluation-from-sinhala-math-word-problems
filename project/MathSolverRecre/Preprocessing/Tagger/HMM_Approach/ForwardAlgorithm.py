@@ -1,6 +1,8 @@
 import codecs
 from decimal import *
 
+from project.MathSolverRecre.constants import MainPath
+
 tag_list = set()
 tag_count = {}
 word_set = set()
@@ -8,10 +10,10 @@ word_set = set()
 
 def get_TrainSet():
     print("In Training\n")
-    output_file = "D:/ZZ__FYP/project/MathSolverRecre/Preprocessing/Resources/HMM.txt"
+    output_file = MainPath +"project/MathSolverRecre/Preprocessing/Resources/HMM.txt"
     wordtag_list = []
 
-    input_file = codecs.open("D:/ZZ__FYP/project/MathSolverRecre/Preprocessing/Resources/Tagger/Test_Corpus.txt", mode='r', encoding="utf-16")
+    input_file = codecs.open(MainPath +"project/MathSolverRecre/Preprocessing/Resources/Tagger/Test_Corpus.txt", mode='r', encoding="utf-16")
     lines = input_file.readlines()
     for line in lines:
         line = line.strip('\n')
@@ -41,7 +43,7 @@ def calculate_Trans_probs():
             # print("i> ",i)
             word = data[:-i.find("_") - 1]
             # print("word> ",word)
-            fout = codecs.open("D:/ZZ__FYP/project/MathSolverRecre/Preprocessing/Resources/training_wordset.txt", mode='a', encoding="utf-8")
+            fout = codecs.open(MainPath +"project/MathSolverRecre/Preprocessing/Resources/training_wordset.txt", mode='a', encoding="utf-8")
             fout.write(word + "\n")
 
             word_set.add(word.lower())
@@ -135,7 +137,7 @@ def generate_training_file():
     transition_model = smoothing_probs()
     emission_model = set_emi_probs()
 
-    fout = codecs.open("D:/ZZ__FYP/project/MathSolverRecre/Preprocessing/Resources/HMM.txt", mode='w', encoding="utf-8")
+    fout = codecs.open(MainPath +"project/MathSolverRecre/Preprocessing/Resources/HMM.txt", mode='w', encoding="utf-8")
     for key, value in transition_model.items():
         # print("key: ", key)
         # print("value: ", value)

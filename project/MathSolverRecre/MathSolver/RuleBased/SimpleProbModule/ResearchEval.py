@@ -9,6 +9,7 @@ from keras.utils import to_categorical
 from project.MathSolverRecre.MathSolver.RuleBased.Utils.PrepareDataSet import preprocess_sinhala, \
     initialize_WordsList, make_map
 from project.MathSolverRecre.MathSolver.RuleBased.Utils.PrepareForANN import get_types_Simple
+from project.MathSolverRecre.constants import MainPath
 
 
 def model_def(top_words=0, max_length=0, ninputs=785):
@@ -23,7 +24,7 @@ def model_def(top_words=0, max_length=0, ninputs=785):
 
 
 def method1():
-    SimpleAlgebraCorpusPath = "D:/ZZ__FYP/project/MathSolverRecre/MathSolver/AlgebraResources/SimpleAlgebraProblems.csv"
+    SimpleAlgebraCorpusPath = MainPath +"project/MathSolverRecre/MathSolver/AlgebraResources/SimpleAlgebraProblems.csv"
     corpus = []
     typesArray = []
     typesAndIndexArray = []

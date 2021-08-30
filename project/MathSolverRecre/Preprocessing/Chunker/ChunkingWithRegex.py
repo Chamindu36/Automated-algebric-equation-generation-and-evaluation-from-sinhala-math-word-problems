@@ -4,11 +4,14 @@ from nltk.chunk.regexp import ChunkRule
 from nltk.corpus import state_union, state_unionUTF
 from nltk.tokenize import PunktSentenceTokenizer
 import nltk
+
+from project.MathSolverRecre.constants import MainPath
+
 nltk.download('state_union')
 from project.MathSolverRecre.Preprocessing.Tagger.TaggerUse import pos_tagging
 
-trainSetPath = "D:/ZZ__FYP/project/MathSolverRecre/Preprocessing/Resources/NERData.txt"
-testSetPath = "D:/ZZ__FYP/project/MathSolverRecre/Preprocessing/Resources/Book.txt"
+trainSetPath = MainPath +"project/MathSolverRecre/Preprocessing/Resources/NERData.txt"
+testSetPath = MainPath +"project/MathSolverRecre/Preprocessing/Resources/Book.txt"
 train_text = state_unionUTF.raw(trainSetPath)
 sample_text = state_unionUTF.raw(testSetPath)
 custom_sent_tokenizer = PunktSentenceTokenizer(train_text)
