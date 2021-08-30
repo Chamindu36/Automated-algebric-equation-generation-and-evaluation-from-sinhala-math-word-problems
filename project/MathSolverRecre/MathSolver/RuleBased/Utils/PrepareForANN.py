@@ -3,9 +3,10 @@ import csv
 import numpy as np
 
 from project.MathSolverRecre.MathSolver.RuleBased.Utils.PrepareDataSet import preprocess_sinhala, initialize_WordsList, make_map
+from project.MathSolverRecre.constants import MainPath
 
-SimpleAlgebraCorpusPath = "D:/ZZ__FYP/project/MathSolverRecre/MathSolver/AlgebraResources/SimpleAlgebraProblems.csv"
-ComplexAlgebraCorpusPath = "D:/ZZ__FYP/project/MathSolverRecre/MathSolver/AlgebraResources/ComplexAlgebraDataset.csv"
+SimpleAlgebraCorpusPath = MainPath +"project/MathSolverRecre/MathSolver/AlgebraResources/SimpleAlgebraProblems.csv"
+ComplexAlgebraCorpusPath = MainPath +"project/MathSolverRecre/MathSolver/AlgebraResources/ComplexAlgebraDataset.csv"
 
 def get_types_Simple(corpus, types):
     answers = []

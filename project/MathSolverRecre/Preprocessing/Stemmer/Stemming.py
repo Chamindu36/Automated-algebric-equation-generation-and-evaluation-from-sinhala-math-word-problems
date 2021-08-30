@@ -3,8 +3,9 @@ import operator
 import re
 
 from project.MathSolverRecre.Preprocessing.Utils.Tokenizer import tokenize_texts
+from project.MathSolverRecre.constants import MainPath
 
-stem_dictionary = "D:/ZZ__FYP/project/MathSolverRecre/Preprocessing/Resources/New_Stem_Dictionary.txt"
+stem_dictionary = MainPath + "project/MathSolverRecre/Preprocessing/Resources/New_Stem_Dictionary.txt"
 
 
 # Convert tuples in to strings

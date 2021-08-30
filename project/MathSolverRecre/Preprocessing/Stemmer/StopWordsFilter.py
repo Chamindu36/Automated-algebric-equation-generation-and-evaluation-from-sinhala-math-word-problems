@@ -1,4 +1,7 @@
 import nltk
+
+from project.MathSolverRecre.constants import MainPath
+
 nltk.download('state_union')
 from nltk.corpus import state_unionUTF
 
@@ -7,7 +10,7 @@ from project.MathSolverRecre.Preprocessing.Stemmer.Stemming import stemming
 
 def get_Stop_Words():
 
-    stopWordsPath = "D:/ZZ__FYP/project/MathSolverRecre/Preprocessing/Resources/StopWords_425.txt"
+    stopWordsPath = MainPath +"project/MathSolverRecre/Preprocessing/Resources/StopWords_425.txt"
     stopwords = [(l.strip(), 'utf-8') for l in open(stopWordsPath, encoding='utf-16')]
 
     StopWordsDic = []
@@ -20,7 +23,7 @@ def get_Stop_Words():
 
 
 def filter_text(sentence):
-    stopWordsPath = "D:/ZZ__FYP/project/MathSolverRecre/Preprocessing/Resources/StopWords_425.txt"
+    stopWordsPath = MainPath +"project/MathSolverRecre/Preprocessing/Resources/StopWords_425.txt"
     stopwords = [(l.strip(), 'utf-8') for l in open(stopWordsPath, encoding='utf-16')]
 
     StopWordsDic = []
@@ -40,7 +43,7 @@ def filter_text(sentence):
     return FilteredSentence
 
 
-testSetPath = "D:/ZZ__FYP/project/MathSolverRecre/Preprocessing/Resources/Book.txt"
+testSetPath = MainPath + "project/MathSolverRecre/Preprocessing/Resources/Book.txt"
 
 sample_text = state_unionUTF.raw(testSetPath)
 

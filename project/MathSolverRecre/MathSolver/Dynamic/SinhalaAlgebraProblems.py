@@ -7,8 +7,9 @@ import pandas as pd
 
 from project.MathSolverRecre.MathSolver.Dynamic import PrepareSinhalaDataset
 from project.MathSolverRecre.MathSolver.Dynamic.PrepareSinhalaDataset import sinhala_process
+from project.MathSolverRecre.constants import MainPath
 
-AlgebraSetPath = "D:/ZZ__FYP/project/MathSolverRecre/MathSolver/AlgebraResources/Test2.csv"
+AlgebraSetPath = MainPath +"project/MathSolverRecre/MathSolver/AlgebraResources/Test2.csv"
 
 def prepareAlgebraInput():
     csvf = open(AlgebraSetPath, 'r', encoding='utf16')

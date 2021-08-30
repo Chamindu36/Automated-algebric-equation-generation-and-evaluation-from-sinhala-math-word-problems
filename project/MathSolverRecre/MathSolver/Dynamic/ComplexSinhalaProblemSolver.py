@@ -1,5 +1,8 @@
 import csv
 import nltk
+
+from project.MathSolverRecre.constants import MainPath
+
 nltk.download('perluniprops')
 import nltk
 nltk.download('state_union')
@@ -13,7 +16,7 @@ from project.MathSolverRecre.MathSolver.Dynamic import SinhalaAlgebraProblems, P
 from project.MathSolverRecre.MathSolver.Dynamic.FetchProblem import fetch_problem
 from project.MathSolverRecre.MathSolver.Dynamic.PrepareSinhalaDataset import sinhala_process
 
-AlgebraSetPath = "D:/ZZ__FYP/project/MathSolverRecre/MathSolver/AlgebraResources/Test2.csv"
+AlgebraSetPath = MainPath + "project/MathSolverRecre/MathSolver/AlgebraResources/Test2.csv"
 
 def defineModelandOptimizer(top_words=0, max_length=0, ninputs=785):
     model = Sequential()

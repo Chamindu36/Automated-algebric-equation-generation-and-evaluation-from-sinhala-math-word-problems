@@ -3,13 +3,15 @@ from decimal import *
 
 from pip._vendor.msgpack.fallback import xrange
 
+from project.MathSolverRecre.constants import MainPath
+
 tag_set = set()
 word_set = set()
 
 
 def get_train_data():
-    inputFile = "D:/ZZ__FYP/project/MathSolverRecre/Preprocessing/Resources/HMM.txt"
-    output_file = "D:/ZZ__FYP/project/MathSolverRecre/Preprocessing/ViterbiOutput.txt"
+    inputFile = MainPath +"project/MathSolverRecre/Preprocessing/Resources/HMM.txt"
+    output_file = MainPath +"project/MathSolverRecre/Preprocessing/ViterbiOutput.txt"
     transition_prob = {}
     emission_prob = {}
     tag_list = []
@@ -122,8 +124,8 @@ def viterbi_process(sentence, tags, transition_prob, emission_prob, tag_count, w
 
 def HMM_tagging():
     tag_list, transition_model, emission_model, tag_count, word_set = get_train_data()
-    input_file = codecs.open("D:/ZZ__FYP/project/MathSolverRecre/Preprocessing/Resources/Book.txt", mode='r', encoding="utf-8")
-    fout = codecs.open("D:/ZZ__FYP/project/MathSolverRecre/Preprocessing/ViterbiOutput.txt", mode='w', encoding="utf-8")
+    input_file = codecs.open(MainPath +"project/MathSolverRecre/Preprocessing/Resources/Book.txt", mode='r', encoding="utf-8")
+    fout = codecs.open(MainPath +"project/MathSolverRecre/Preprocessing/ViterbiOutput.txt", mode='w', encoding="utf-8")
     for sentence in input_file.readlines():
         # print("New Sentence\n")
         path = viterbi_process(sentence.strip(), tag_list, transition_model, emission_model, tag_count, word_set)

@@ -7,13 +7,14 @@ import nltk
 from project.MathSolverRecre.Preprocessing.Stemmer.StopWordsFilter import get_Stop_Words, filter_text
 from project.MathSolverRecre.Preprocessing.Tagger.PosPerceptronTagger import ngramTagger, training_corpus
 from project.MathSolverRecre.Preprocessing.Utils.RemoveUnnecessaryChars import delete_punctuation
+from project.MathSolverRecre.constants import MainPath
 
 nltk.download('state_union')
 from nltk.corpus import state_unionUTF
 
 punctuation = ['(', ')', '?', ':', ';', ',', '.', '!', '/', '"', "'", "#", "...", "..", "-"]
 
-testSetPath = "D:/ZZ__FYP/project/MathSolverRecre/Preprocessing/Resources/Book.txt"
+testSetPath = MainPath + "project/MathSolverRecre/Preprocessing/Resources/Book.txt"
 
 sample_text = state_unionUTF.raw(testSetPath)
 # print(train_text)

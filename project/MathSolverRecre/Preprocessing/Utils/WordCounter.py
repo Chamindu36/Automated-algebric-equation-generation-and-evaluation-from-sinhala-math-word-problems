@@ -1,5 +1,7 @@
-corpusPath = "D:/ZZ__FYP/project/MathSolverRecre/Preprocessing/Resources/Tagger/Test_Corpus.txt"
-newFilePath = "D:/ZZ__FYP/project/MathSolverRecre/Preprocessing/Resources/WordFreq.txt"
+from project.MathSolverRecre.constants import MainPath
+
+corpusPath = MainPath +"project/MathSolverRecre/Preprocessing/Resources/Tagger/Test_Corpus.txt"
+newFilePath = MainPath +"project/MathSolverRecre/Preprocessing/Resources/WordFreq.txt"
 
 file = open(corpusPath ,"r", encoding="utf-16")
 

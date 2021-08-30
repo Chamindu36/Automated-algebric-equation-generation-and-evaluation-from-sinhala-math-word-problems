@@ -33,5 +33,5 @@ def readFile(filePath):
     print(outPut)
     return outPut
 
-# filePath = 'D:/ZZ__FYP/project/project/MathSolverRecre/Preprocessing/Resources/Book.txt'
+# filePath = MainPath +'project/project/MathSolverRecre/Preprocessing/Resources/Book.txt'
 # readFile(filePath)
