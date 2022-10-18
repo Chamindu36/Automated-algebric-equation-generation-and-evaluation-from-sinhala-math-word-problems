@@ -42,6 +42,7 @@ use ANN model for equation classification.
 6. Clone the repo.
 7. Change main path to your loacl setup.
 8. Build python project.
+9. Install the given dependancies
 
 ## How to run the tool on Windows
 1. Wait until the GUI appears.
