@@ -21,7 +21,7 @@ use ANN model for equation classification.
 ![Alt text](https://github.com/Chamindu36/AUTOMATED-ALGEBRIC-EQUATION-GENERATION-AND-EVALUATION-FROM-SINHALA-MATH-WORD-PROBLEMS/blob/master/Screen%20Shot%202022-02-22%20at%202.59.41%20PM.png?raw=true "Optional Title")
 
 
-## How to Setup
+## How to Setup on windows
 1. Please refer the steps mentioned in https://colab.research.google.com/drive/179ypZund7SiDDw0Sq_O_Eq_qVr_uRrJ-?usp=sharing and get the required python packages.
 2. Install Nvidia CUDA.
 
