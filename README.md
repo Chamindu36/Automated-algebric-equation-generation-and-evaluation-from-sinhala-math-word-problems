@@ -23,7 +23,7 @@ use ANN model for equation classification.
 
 ## How to Setup on windows
 1. Please refer the steps mentioned in https://colab.research.google.com/drive/179ypZund7SiDDw0Sq_O_Eq_qVr_uRrJ-?usp=sharing and get the required python packages.
-2. Install Nvidia CUDA.
+2. Install Nvidia CUDA 2.X version.
 
 3. install nltk 3.2.5.
 
