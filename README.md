@@ -43,7 +43,7 @@ use ANN model for equation classification.
 7. Change main path to your loacl setup.
 8. Build python project.
 
-## How to run the tool
+## How to run the tool on Windows
 1. Wait until the GUI appears.
 2. Check the samples provided in the Testing folder and create your question and paste the question into a text file.
 3. Check radio button to notify whether the question is a simple one or complex one.
