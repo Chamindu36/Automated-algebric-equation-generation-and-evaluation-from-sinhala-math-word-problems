@@ -39,6 +39,7 @@ use ANN model for equation classification.
 `!pip install scikit-learn==0.22.2`
 `!pip install numpy==1.18.1`
 
+
 6. Clone the repo.
 7. Change main path to your loacl setup.
 8. Build python project.
